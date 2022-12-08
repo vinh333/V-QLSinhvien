@@ -11,7 +11,7 @@ $sql = "select * from users where email='$email' and password='$password' ";
 //thuc hien truy van
 
 $rs = mysqli_query($db, $sql);
-
+mysqli_fetch_all($rs);
 if (mysqli_num_rows($rs) > 0) {
     echo "dang nhap thanh cong";
 } else {
