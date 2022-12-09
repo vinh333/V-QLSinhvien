@@ -63,7 +63,7 @@
       <h1 class="title">Get in touch</h1>
       <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data" class="contact-form row">
          <div class="form-field col-lg-6">
-            <input id="name" name="username" class="input-text js-input" type="text" required>
+            <input name="username" class="input-text js-input" type="text" required>
             <label class="label" for="name">Name</label>
          </div>
          <div class="form-field col-lg-6 ">
@@ -72,7 +72,7 @@
          </div>
          <div class="form-field col-lg-6 ">
             <input name="password" class="input-text js-input" type="text" required>
-            <label class="label" for="password">password</label>
+            <label class="label" for="password">PASSWORD</label>
          </div>
          <div class="form-field col-lg-12">
             <input class="submit-btn" name="submit" value="Submit" type="submit">
