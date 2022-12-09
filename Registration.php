@@ -80,7 +80,14 @@ if (isset($_POST['submit'])) {
       // Dừng chương trình
       die();
    } else {
-      $sql = "INSERT INTO users (username, password, email VALUES ('$username','$password','$email')";
+      //ket noi
+      $ketnoi = mysqli_connect("localhost", "root", "", "csdl1");
+      //    //truy van du lieu
+
+      $sql = "INSERT INTO `users` ( `username`, `email`, `password`) VALUES ( '$username', '$email', '$password'); ";
+      //    //thuc hien truy van
+
+      $ketqua = mysqli_query($ketnoi, $sql);
       echo '<script language="javascript">alert("Đăng ký thành công!"); window.location="Registration.php";</script>';
    }
 }
