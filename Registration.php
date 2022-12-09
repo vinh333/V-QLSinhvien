@@ -90,6 +90,7 @@ if (isset($_POST['submit'])) {
       $ketqua = mysqli_query($ketnoi, $sql);
       echo '<script language="javascript">alert("Đăng ký thành công!"); window.location="Registration.php";</script>';
    }
+   echo "dssd";
 }
 
 ?>
