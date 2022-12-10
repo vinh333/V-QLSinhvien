@@ -35,7 +35,7 @@
       $sql = "INSERT INTO `users` ( `username`, `email`, `password`) VALUES ( '$username', '$email', '$password'); ";
       //    //thuc hien truy van
 
-      $ketqua = mysqli_query($ketnoi, $sql);
+      $ketqua = mysqli_query($ketnoi, $sql);  
       echo '<script language="javascript">alert("Đăng ký thành công!"); window.location="login.html";</script>';
    }
 }
@@ -72,7 +72,7 @@
          </div>
          <div class="form-field col-lg-6 ">
             <input name="password" class="input-text js-input" type="text" required>
-            <label class="label" for="password">PASSWORD</label>
+            <label class="label" for="password">PASSWORD 123 </label>
          </div>
          <div class="form-field col-lg-12">
             <input class="submit-btn" name="submit" value="Submit" type="submit">
