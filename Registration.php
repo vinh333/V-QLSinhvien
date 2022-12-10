@@ -24,7 +24,7 @@
    $result = mysqli_query($conn, $sql);
 // Nếu kết quả trả về lớn hơn 1 thì nghĩa là username hoặc email đã tồn tại trong CSDL
    if (mysqli_num_rows($result) > 0) {
-      echo '<script language="javascript">alert("Bị trùng tên hoặc chưa nhập tên!"); window.location="Registration.php";</script>';
+      echo '<script language="javascript">alert("Bị trùng tên hoặc chưa nhập tên!"); window.location="login.html";</script>';
 // Dừng chương trình
       die();
    } else {

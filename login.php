@@ -1,6 +1,6 @@
 <?php
     $email = $_POST['email'] ?? '';
-    $password = $_POST['password'] ?? '';
+    $password = htmlspecialchars($_POST['password'] ?? '');
 
 //ket noi csdl
     $db = mysqli_connect("localhost", "root", "", "csdl1");
@@ -14,6 +14,6 @@
         echo "Đăng nhập thành công";
     } else {
         echo "Đăng nhập thất bại";
-        require_once 'login.html';
+        require_once 'login.html'; 
     }
 ?>
