@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <form action="themsp.php" method="POST" enctype="multipart/form-data">
         <h1>Form thêm sản phẩm</h1>
@@ -24,8 +26,25 @@
                 <td><input type="number" name="f_gia"></td>
             </tr>
             <tr>
+                <td><label>Ngành hàng: </label></td>
+                <td><input list="nganhhang" name="f_nganhhang">
+                    <datalist id="nganhhang">
+                        <option value="Thời trang nam">
+                        <option value="Thời trang nam">
+                        <option value="Sức khoẻ">
+                        <option value="Sắc đẹp">
+                    </datalist>
+                </td>
+
+
+            </tr>
+            <tr>
                 <td>Thông số kích thước</td>
                 <td><input type="number" name="f_kthuoc"></td>
+            </tr>
+            <tr>
+                <td>Mô tả</td>
+                <td><input type="text" name="f_mota"></td>
             </tr>
             <tr>
                 <td><input type="submit" value="THÊM SẢN PHẨM"></td>
@@ -33,4 +52,5 @@
         </table>
     </form>
 </body>
+
 </html>
