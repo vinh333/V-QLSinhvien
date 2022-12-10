@@ -1,12 +1,11 @@
 <?php
-    $username = $_POST['username'] ?? '';
     $email = $_POST['email'] ?? '';
     $password = $_POST['password'] ?? '';
 
 //ket noi csdl
     $db = mysqli_connect("localhost", "root", "", "csdl1");
 //truy van du lieu
-    $sql = "select * from users where username = '$username' and email='$email' and password='$password' ";
+    $sql = "select * from users where email='$email' and password='$password' ";
 //thuc hien truy van
 
     $rs = mysqli_query($db, $sql);
