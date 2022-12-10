@@ -26,11 +26,11 @@ img{
     transition: 0.3s;
 }
 
-.khungtrong h4{
+.thongtin a{
     color: red;
     font-weight: bold;
 }
-.khungtrong p{
+.thongso p{
     color: white;
     background-color: rgb(222, 67, 67);
     border-radius: 5px;
