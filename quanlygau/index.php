@@ -21,7 +21,7 @@ $ketqua = mysqli_query($ketnoi, $sql);
         <?php
 
         while ($row = mysqli_fetch_array($ketqua)) {
-            echo inSP($row['anhsanpham'], $row['tensanpham'], $row['giasanpham'], $row['kichthuoc'], $row[`nganhhang`], $row[`mota`]);
+            echo inSP($row['anhsanpham'], $row['tensanpham'], $row['giasanpham'], $row['kichthuoc'], $row['nganhhang'], $row['mota']);
         }
         ?>
     </div>
