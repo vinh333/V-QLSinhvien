@@ -22,6 +22,9 @@ $ketqua = mysqli_query($ketnoi, $sql);
 
         while ($row = mysqli_fetch_array($ketqua)) {
             if (strlen($row['mota']) >= 15) {
+
+                $row['mota'] = substr($row['mota'], 0, 75);
+                $row['mota'] .= "...";
             }
             echo inSP($row['anhsanpham'], $row['tensanpham'], $row['giasanpham'], $row['kichthuoc'], $row['nganhhang'], $row['mota']);
         }
