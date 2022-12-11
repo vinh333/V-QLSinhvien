@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,6 +40,7 @@
 
                                     <input type="email" name="email" class="form-control">
                                 </div>
+
                                 <div class="form-group">
                                     <label class="form-control-label">PASSWORD</label>
                                     <input type="password" class="form-control" name="password">
@@ -47,12 +51,10 @@
                                         <!-- Error Message -->
                                     </div>
                                     <div class="col-lg-6 login-btm login-button">
-                                        <button type="submit" class="btn btn-outline-primary"
-                                            name="submit">LOGIN</button>
+                                        <button type="submit" class="btn btn-outline-primary" name="submit">LOGIN</button>
                                     </div>
                                     <div class="col-lg-6 login-btm login-button">
-                                        <button type="submit" class="btn btn-outline-primary" name="submit"><a
-                                                href="Registration.php">Registration</a></button>
+                                        <button type="submit" class="btn btn-outline-primary" name="submit"><a href="Registration.php">Registration</a></button>
                                     </div>
                                 </div>
 
