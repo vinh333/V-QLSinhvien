@@ -17,14 +17,14 @@ include('function.php');
 
 <body>
     <h1>Sản phẩm mới</h1>
-    <div class="khungngoai">
+    
         <?php
 
             if ($row = mysqli_fetch_array($ketqua)) {
                 echo thongso($row['anhsanpham'], $row['tensanpham'], $row['giasanpham'], $row['kichthuoc'], $row['nganhhang'],$row['mota']);
             }
         ?>
-    </div>
+    
 </body>
 
 </html>
