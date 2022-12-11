@@ -1,8 +1,8 @@
 <?php
     include('function.php');
 
-    $ketnoi = mysqli_connect("localhost", "root", "", "quanlygau");
-    $sql = "SELECT id, hinhanh, tensanpham, giasanpham, kichthuoc FROM sanpham";
+    $ketnoi = mysqli_connect("localhost", "root", "", "csdl1");
+    $sql = "SELECT id, anhsanpham, tensanpham, giasanpham FROM sanpham";
     $ketqua = mysqli_query($ketnoi, $sql);  
 ?>
 <!DOCTYPE html>
@@ -19,7 +19,7 @@
         <?php
            
             while($row = mysqli_fetch_array($ketqua)){
-                echo inSP($row['hinhanh'], $row['tensanpham'], $row['giasanpham'], $row['kichthuoc']);
+                echo inSP($row['anhsanpham'], $row['tensanpham'], $row['giasanpham']);
             }
         ?>
     </div>

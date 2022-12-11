@@ -47,7 +47,7 @@
                 <td><input type="text" name="f_mota"></td>
             </tr>
             <tr>
-                <td><input type="submit" value="THÊM SẢN PHẨM"></td>
+                <td><input type="submit" name="submit" value="THÊM SẢN PHẨM"></td>
             </tr>
         </table>
     </form>
