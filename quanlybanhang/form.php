@@ -30,7 +30,7 @@
                 <td><input list="nganhhang" name="f_nganhhang">
                     <datalist id="nganhhang">
                         <option value="Thời trang nam">
-                        <option value="Thời trang nam">
+                        <option value="Thời trang nữ">
                         <option value="Sức khoẻ">
                         <option value="Sắc đẹp">
                     </datalist>
