@@ -2,7 +2,7 @@
 include('function.php');
 
     $ketnoi = mysqli_connect("localhost", "root", "", "csdl1");
-    $sql = "SELECT  `anhsanpham`, `tensanpham`,`giasanpham`, `kichthuoc` , `nganhhang`, `mota` FROM sanpham";
+    $sql = "SELECT `id`, `anhsanpham`, `tensanpham`,`giasanpham`, `kichthuoc` , `nganhhang`, `mota` FROM sanpham";
     $ketqua = mysqli_query($ketnoi, $sql);
 ?>
 <!DOCTYPE html>
