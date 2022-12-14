@@ -49,18 +49,46 @@ if (isset($_POST['submit'])) {
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="Registration.css">
+   <link rel="stylesheet" href="main.css">
    <title>Document</title>
-   <!--important link source from "https://bootsnipp.com/snippets/A36DP"-->
-   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-   <link rel="stylesheet" href="Registration.css">
 </head>
 
 <body>
+   <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
+      <h2>FROM DANG KY</h2>
+      <table>
 
-   <!------ Include the above in your HEAD tag ---------->
 
-   <section class="get-in-touch">
+
+
+
+         <tr>
+            <td>User name:</td>
+            <td><input type="text" name="username"></td>
+
+         </tr>
+
+         <tr>
+            <td>Email :</td>
+            <td><input type="email" name="email"></td>
+
+         </tr>
+
+         <tr>
+            <td>Password:</td>
+            <td><input type="password" name="password"></td>
+         </tr>
+
+         <tr>
+            <td><input type="submit" name="submit" value="Registration"></td>
+         </tr>
+
+
+      </table>
+   </form>
+
+
+   <<<<<<< HEAD:Form/Registration.php <section class="get-in-touch">
       <h1 class="title">Get in touch</h1>
       <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data" class="contact-form row">
          <div class="form-field col-lg-6">
@@ -79,9 +107,11 @@ if (isset($_POST['submit'])) {
             <input class="submit-btn" name="submit" value="Submit" type="submit">
          </div>
       </form>
-   </section>
-   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      </section>
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      =======
+      >>>>>>> main:Registration.php
 </body>
 
 </html>
