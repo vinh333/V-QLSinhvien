@@ -25,7 +25,7 @@ function inSP($anh, $tensp, $gia, $eid)
     echo "<div class=\"thongtin_1\">";
     echo "<p>" . $gia . "đ" . "</p>";
     echo "<div class=\"thongso_1\">";
-    echo  " <a href=\"xemthem.php?editid= $eid\">Xem thêm</a> ";
+        echo  " <a href=\"xemthem.php?editid= $eid\">Xem thêm</a> ";
     echo "</div>";
     echo "</div>";
     echo "</div>";
