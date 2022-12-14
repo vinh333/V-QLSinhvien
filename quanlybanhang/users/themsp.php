@@ -13,6 +13,7 @@ if (isset($_POST['submit'])) {
     $k_thuoc = $_POST['f_kthuoc'];
     $nganhhang = $_POST['f_nganhhang'];
     $mota = $_POST['f_mota'];
+    $id;
     // check 
     if (empty($anh)) {
         array_push($errors, "Vui lòng thêm ảnh");
@@ -36,7 +37,7 @@ if (isset($_POST['submit'])) {
     }
 
     // // $sql = "INSERT INTO `sanpham` ( `hinhanh`, `tensanpham`, `giasanpham`, `kichthuoc`) VALUES('$anh', '$tensp', '$gia', '$k_thuoc');";
-    $sql = "INSERT INTO `sanpham` ( `anhsanpham`, `tensanpham`,`giasanpham`, `kichthuoc` , `nganhhang`, `mota`) VALUES('$anh', '$tensp', '$gia', '$k_thuoc', '$nganhhang' ,'$mota' );";
+    $sql = "INSERT INTO `sanpham` (`id`, `anhsanpham`, `tensanpham`,`giasanpham`, `kichthuoc` , `nganhhang`, `mota`) VALUES('$id', '$anh', '$tensp', '$gia', '$k_thuoc', '$nganhhang' ,'$mota' );";
     $ketqua = mysqli_query($ketnoi, $sql);
 
     // if ($ketqua) {
