@@ -3,7 +3,7 @@ $ketnoi = mysqli_connect("localhost", "root", "", "csdl1");
 if (!$ketnoi) {
     exit("Kết nối từ cơ sở dữ liệu thất bại!!");
 }
-
+echo "mmm";
 if (isset($_POST['submit'])) {
     // Get data
     move_uploaded_file($_FILES['f_anh']['tmp_name'], '../imgs/' . $_FILES['f_anh']['name']);
@@ -14,6 +14,7 @@ if (isset($_POST['submit'])) {
     $nganhhang = $_POST['f_nganhhang'];
     $mota = $_POST['f_mota'];
     $id;
+    echo "nnn";
     // check 
     if (empty($anh)) {
         array_push($errors, "Vui lòng thêm ảnh");
@@ -37,13 +38,13 @@ if (isset($_POST['submit'])) {
     }
 
     // // $sql = "INSERT INTO `sanpham` ( `hinhanh`, `tensanpham`, `giasanpham`, `kichthuoc`) VALUES('$anh', '$tensp', '$gia', '$k_thuoc');";
-    $sql = "INSERT INTO `sanpham` (`id`, `anhsanpham`, `tensanpham`,`giasanpham`, `kichthuoc` , `nganhhang`, `mota`) VALUES('$id', '$anh', '$tensp', '$gia', '$k_thuoc', '$nganhhang' ,'$mota' );";
+    $sql = "INSERT INTO `sanpham` (`anhsanpham`, `tensanpham`,`giasanpham`, `kichthuoc` , `nganhhang`, `mota`) VALUES('$anh', '$tensp', '$gia', '$k_thuoc', '$nganhhang' ,'$mota' );";
     $ketqua = mysqli_query($ketnoi, $sql);
 
-    // if ($ketqua) {
+    if ($ketqua) {
     // include('index.php');
     header('location: index.php');
-    // }
+    }
     //     echo "Kết nối";
     // } else
 
