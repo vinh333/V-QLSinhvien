@@ -31,4 +31,3 @@ function inSP($anh, $tensp, $gia)
     echo "</div>";
 }
 ?>
-//
