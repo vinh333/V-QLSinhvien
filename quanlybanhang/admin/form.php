@@ -49,7 +49,7 @@
             <tr>
                 <td><input type="submit" name="submit" value="THÊM SẢN PHẨM"></td>
             </tr>
-            <a href=""></a>
+
         </table>
     </form>
 </body>
