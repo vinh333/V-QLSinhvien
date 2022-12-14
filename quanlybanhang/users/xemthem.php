@@ -24,6 +24,7 @@ $ketqua = mysqli_query($ketnoi, $sql);
     //     echo thongso($row['anhsanpham'], $row['tensanpham'], $row['giasanpham'], $row['kichthuoc'], $row['nganhhang'], $row['mota']);
     // }
     $eid = $_GET['editid'];
+
     while ($row = mysqli_fetch_array($ketqua)) {
         if ($row['id'] == $eid) {
             echo thongso($row['anhsanpham'], $row['tensanpham'], $row['giasanpham'], $row['kichthuoc'], $row['nganhhang'], $row['mota']);

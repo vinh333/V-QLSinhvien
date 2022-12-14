@@ -26,8 +26,9 @@ $ketqua = mysqli_query($ketnoi, $sql);
                 echo inSP($row['anhsanpham'], $row['tensanpham'], $row['giasanpham']);
                 $a = $row['id'];
 
-                // echo "<input type=\"submit\" name\" $a\" value\"xemthem\">";
-                echo  " <a href=\"xemthem.php?editid=<?php echo $a;?>\">Xemthem</a> ";
+
+
+                echo  " <a href=\"xemthem.php?editid= $a\">Xemthem</a> ";
             }
             ?>
         </form>
