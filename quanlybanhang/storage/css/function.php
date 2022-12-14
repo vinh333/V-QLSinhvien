@@ -17,7 +17,7 @@ function thongso($anh, $tensp, $gia, $kthuoc, $nganhhang, $mota)
 ?>
 
 <?php
-function inSP($anh, $tensp, $gia)
+function inSP($anh, $tensp, $gia, $eid)
 {
     echo "<div class=\"khungtrong_1\">";
     echo "<img class=\"anh_1\" src=\"" . $anh . "\" >";
@@ -25,7 +25,7 @@ function inSP($anh, $tensp, $gia)
     echo "<div class=\"thongtin_1\">";
     echo "<p>" . $gia . "đ" . "</p>";
     echo "<div class=\"thongso_1\">";
-
+    echo  " <a href=\"xemthem.php?editid= $eid\">Xem thêm</a> ";
     echo "</div>";
     echo "</div>";
     echo "</div>";

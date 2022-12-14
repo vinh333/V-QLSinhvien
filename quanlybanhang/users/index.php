@@ -23,12 +23,8 @@ $ketqua = mysqli_query($ketnoi, $sql);
             <?php
 
             while ($row = mysqli_fetch_array($ketqua)) {
-                echo inSP($row['anhsanpham'], $row['tensanpham'], $row['giasanpham']);
+                echo inSP($row['anhsanpham'], $row['tensanpham'], $row['giasanpham'], $row['id']);
                 $a = $row['id'];
-
-
-
-                echo  " <a href=\"xemthem.php?editid= $a\">Xemthem</a> ";
             }
             ?>
         </form>
